@@ -26,7 +26,7 @@ class QuizsetController {
     }
     static getAllquiz= async (req, res) => {
         try {
-            const result = await OrderModel.find()
+            const result = await QuizsetModel.find()
             res.send(result)
         }
        catch (error) {

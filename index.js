@@ -8,7 +8,7 @@ import cart from "./routes/cart.js";
 import payment from "./routes/payment.js";
 import order from "./routes/order.js";
 import contact from "./routes/contact.js";
-import QuizSet from "./routes/quizset.js";
+import quizSet from "./routes/quizset.js";
 
 import Razorpay from "razorpay";
 import * as dotenv from 'dotenv' 
@@ -37,7 +37,7 @@ app.use("/api/users",users);
 app.use("/api/products",web);
 app.use("/api",cart);
 app.use("/api/order",order);
-app.use("/api/quizset",QuizSet);
+app.use("/api/quizset",quizSet);
 app.use("/api/contact",contact);
 
 
