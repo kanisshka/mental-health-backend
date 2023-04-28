@@ -24,19 +24,19 @@ class QuizsetController {
             console.log(error)
         }
     }
-    // static getAllOrders= async (req, res) => {
-    //     try {
-    //         const result = await OrderModel.find()
-    //         res.send(result)
-    //     }
-    //    catch (error) {
-    //         console.log(error)
-    //     }
-    // }
+    static getAllquiz= async (req, res) => {
+        try {
+            const result = await OrderModel.find()
+            res.send(result)
+        }
+       catch (error) {
+            console.log(error)
+        }
+    }
     static getAllquizbyUser= async (req, res) => {
         try {
-            const result = await QuizsetModel.find({userId:req.params.userId}).sort({date:-1})
-           console.log(req.params.userId)
+            const result = await QuizsetModel.find({user:req.params.user}).sort({date:-1})
+           console.log(req.params.user)
             res.status(200).json(result);
             // res.send(result)
         }
