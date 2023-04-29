@@ -9,7 +9,20 @@ const QuizsetSchema = new mongoose.Schema({
                     type: Date,
                     default: Date.now
                 },
-                quizResults: { type: Object }
+                quizResults: [
+                    {
+                        quizTaken: {
+                            type: String,
+                            required: true,
+                            // enum: quizNames
+                        },
+                        quizAnswer: {
+                            type: String,
+                            required: true,
+                            // enum: quizNames
+                        }, 
+                    }
+                ]
             }
         ]
     ,
