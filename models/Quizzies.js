@@ -12,9 +12,6 @@ const QuizziesSchema = new mongoose.Schema({
             {
                ques:{
                 type:String,
-               },
-               ans:{
-                type:String,
                }
             }
         ]
