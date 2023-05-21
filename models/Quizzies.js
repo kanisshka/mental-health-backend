@@ -2,7 +2,8 @@ import mongoose from "mongoose";
 // import dateFormat from "../validators/dateFormat";
 const QuizziesSchema = new mongoose.Schema({
     title:{
-        type:String,
+        type:String, 
+        unique:true,
     },
     desc:{
         type:String,
