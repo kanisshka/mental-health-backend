@@ -76,5 +76,5 @@ class QuizziesController {
     //     }
     // }
 }
-export default QuizsetController
+export default QuizziesController
 
