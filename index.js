@@ -10,7 +10,7 @@ import order from "./routes/order.js";
 import contact from "./routes/contact.js";
 import quizSet from "./routes/quizset.js";
 import therapy from "./routes/Therapy.js";
-import Quizzies from "./routes/quizzies.js";
+import quizzies from "./routes/quizzies.js";
 
 
 
@@ -43,7 +43,7 @@ app.use("/api",cart);
 app.use("/api/order",order);
 app.use("/api/quizset",quizSet);
 app.use("/api/therapy",therapy);
-app.use("/api/quizzies",Quizzies);
+app.use("/api/quizzies",quizzies);
 
 
 app.use("/api/contact",contact);
