@@ -44,19 +44,15 @@ class QuizziesController {
             console.log(error)
         }
     }
-    // static getoneOrder = async (req, res) => {
-    //     // const owner = req.params.UserId
-    //     // console.log(owner)
-    //     try {
-    //         // const result = await OrderModel.findOne({UserId : req.params.UserId}).sort({date:-1})
-    //         const result = await OrderModel.findById(req.params.id)
-    //         res.send(result);
-
-    //     }
-    //     catch (error) {
-    //         console.log(error)
-    //     }
-    // }
+    static getSingleDocById = async (req, res) => {
+        try {
+            const result = await QuizziesModel.findById(req.params.id)
+            res.send(result)
+        }
+        catch (error) {
+            console.log(error)
+        }
+    }
     // static updateDocById = async (req, res) => {
     //     try {
     //         const result = await ProductModel.findByIdAndUpdate(req.params.id, req.body)
