@@ -6,6 +6,7 @@ router.get('/',QuizziesController.getAllquiz)
 router.post('/',QuizziesController.createquiz)
 // router.get('/:id',QuizsetController.getoneOrder)
 router.get('/find/:user',QuizziesController.getAllquizbyUser)
-// router.delete('/:id',QuizsetController.dltDocById)
+router.delete('/:id',QuizziesController.dltDocById)
+router.put('/:id',QuizziesController.updateDocById)
 
 export default router
