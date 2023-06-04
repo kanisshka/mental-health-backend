@@ -9,9 +9,7 @@ const QuizsetSchema = new mongoose.Schema({
                     type: Date,
                     default: Date.now
                 },
-                quizResults: [
-                    {
-                        quizTaken: {
+                quizTaken: {
                             type: String,
                             required: true,
                             // enum: quizNames
@@ -21,8 +19,6 @@ const QuizsetSchema = new mongoose.Schema({
                             required: true,
                             // enum: quizNames
                         }, 
-                    }
-                ]
             }
         ]
     ,

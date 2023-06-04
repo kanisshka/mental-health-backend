@@ -4,7 +4,7 @@ import QuizziesController from "../controllers/Quizziescontroller.js";
 
 router.get('/',QuizziesController.getAllquiz)
 router.post('/',QuizziesController.createquiz)
-// router.get('/:id',QuizsetController.getoneOrder)
+router.get('/:id',QuizziesController.getSingleDocById)
 router.get('/find/:user',QuizziesController.getAllquizbyUser)
 router.delete('/:id',QuizziesController.dltDocById)
 router.put('/:id',QuizziesController.updateDocById)

@@ -44,6 +44,15 @@ class QuizsetController {
             console.log(error)
         }
     }
+    static getSingleDocById = async (req, res) => {
+        try {
+            const result = await QuizsetModel.findById(req.params.id)
+            res.send(result)
+        }
+        catch (error) {
+            console.log(error)
+        }
+    }
     // static getoneOrder = async (req, res) => {
     //     // const owner = req.params.UserId
     //     // console.log(owner)
