@@ -61,5 +61,14 @@ class UserController {
             res.status(500).json({ message: "went wrong" });
         }
     }
+    static getAllDoc = async (req, res) => {
+        try {
+            const result = await UserModel.find()
+            res.send(result)
+        }
+       catch (error) {
+            console.log(error)
+        }
+    }
 }
 export default UserController
